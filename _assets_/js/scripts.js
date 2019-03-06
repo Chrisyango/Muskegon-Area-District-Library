@@ -1,9 +1,10 @@
 /*-----------------------------------------------------------------------------------
 
-	Theme Name: SiteName
+	Theme Name: Muskegan Area District Library
+	Front-end Developer: Chris Yang
 	Author Design: Samir Alley @samiralley | Tom Gooden @good3n
 	Author URI: http://www.revize.com/
-	Date: MONTH DAY, 2015
+	Date: March 3, 2019
 
 -----------------------------------------------------------------------------------*/
 
@@ -195,40 +196,6 @@
 	});
 	// end calendar resize handler
 
-	// revizeWeather
-	if( typeof $.fn.revizeWeather !== "undefined" ){
-		$.fn.revizeWeather({
-			zip: '48326',
-			city_name: '',
-			unit: 'f',
-			success: function(weather) {
-				var date = new Date();
-				date = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
-				var html = '<span>'+date+'</span> <span class="forecast">'+weather.temp+'&deg; '+weather.forecast+'</span>';
-				html += '<i class="'+weather.icon+'"></i>';
-
-				$("#weather").html(html);
-			},
-			error: function(error) {
-				// better to just hide the secion if there is an error
-				$('.weather').hide();
-				console.log(error);
-			}
-		});
-	}
-
-	// Mega Footer Toggle
-	$('.header-toggle').on('click keydown', function(e) {
-		if (e.keyCode === 13 || e.type === 'click') {
-			var inner = $(this).next('.inner-toggle');
-			if (inner.is(':hidden')) {
-				inner.slideDown('200');
-			} else {
-				inner.slideUp('200');
-			}
-		}
-	});
-
 	// Tabs
 	$('#tabs li a').on('click keypress', function(e) {
 		$('#tabs li, #tabs-content .current').removeClass('current').removeClass('fadeInLeft');
@@ -241,43 +208,6 @@
 		$(currentTab).find('h2').focus();
 	})
 
-	// Twitter Feed
-	if(typeof $.fn.tweet !== "undefined"){
-		$("#twitterfeed").tweet({
-			modpath: '_assets_/plugins/twitter/',
-			username: "RevizeSoftware",
-			join_text: "auto",
-			avatar_size: 0,
-			count: 1,
-			auto_join_text_default: "",
-			auto_join_text_ed: "",
-			auto_join_text_ing: "",
-			auto_join_text_reply: "",
-			auto_join_text_url: "",
-			loading_text: "Loading Tweet..."
-		});
-	}
-
-	// Instafeed Feed
-	if(typeof $.fn.Instafeed !== "undefined"){
-		var userFeed = new Instafeed({
-			get: 'user',
-			resolution:'standard_resolution',
-			limit:9,
-			userId: 223202806,
-			accessToken: '303202123.f7e9b72.27c687fbd9c24ecbb29dc92951cdf724'
-		});
-		userFeed.run();
-	}
-
-	// Sticky
-	if(typeof $.fn.sticky !== "undefined"){
-		$("#sticky").sticky({
-			topSpacing:0
-		});
-	}
-
-
 	// bxSlider
 	if(typeof $.fn.bxSlider !== "undefined"){
 		$('.bxslider').bxSlider({
@@ -289,7 +219,57 @@
 
 	// Owl Slider
 	if(typeof $.fn.owlCarousel !== "undefined"){
-		$("#owl-slider").owlCarousel();
+		let newSelectionsCount = $('.new-selections-link').length;
+		const newSelectionsItem = function(num) {
+			return (newSelectionsCount >= num ? num : newSelectionsCount);
+		}
+		$("#new-selections-links").owlCarousel({
+			loop: newSelectionsCount > 1 ? true : false,
+			responsiveClass: true,
+			nav: true,
+			navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+			margin: 20,
+			responsive: {
+				0: {
+					items: newSelectionsItem(1),
+				},
+				600: {
+					items: newSelectionsItem(3),
+					
+				},
+				1200: {
+					items: newSelectionsItem(5),
+					loop: false,
+					nav: false,
+				}
+			}
+		});
+	
+		let quickLinkCount = $('.quick-link').length;
+		const quickLinkItem = function(num) {
+			return (quickLinkCount >= num ? num : quickLinkCount);
+		}
+		$("#quick-links-wrapper").owlCarousel({
+			loop: quickLinkCount > 1 ? true : false,
+			responsiveClass: true,
+			nav: true,
+			navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+			margin: 20,
+			responsive: {
+				0: {
+					items: quickLinkItem(1),
+				},
+				600: {
+					items: quickLinkItem(3),
+					
+				},
+				1200: {
+					items: quickLinkItem(5),
+					loop: false,
+					nav: false,
+				}
+			}
+		});
 	}
 
 	// Preloader
