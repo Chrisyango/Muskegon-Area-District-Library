@@ -172,12 +172,12 @@
 			</div><!-- /#stream-download-info -->
 
 			<div id="stream-download-links">
-				<a href="./" class="stream-download-link">ebooks</a>
-				<a href="./" class="stream-download-link">eaudiobooks</a>
-				<a href="./" class="stream-download-link">movies & tv</a>
-				<a href="./" class="stream-download-link">music</a>
-				<a href="./" class="stream-download-link">emagazines</a>
-				<a href="./" class="stream-download-link">comics</a>
+				<a href="./" class="stream-download-link">eBooks</a>
+				<a href="./" class="stream-download-link">eAudiobooks</a>
+				<a href="./" class="stream-download-link">Movies & TV</a>
+				<a href="./" class="stream-download-link">Music</a>
+				<a href="./" class="stream-download-link">eMagazines</a>
+				<a href="./" class="stream-download-link">Comics</a>
 			</div><!-- /#stream-download-links -->
 		</div><!-- /.container -->
 	</section><!-- /#stream-download -->

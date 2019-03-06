@@ -18,6 +18,11 @@
 	src:url(../fonts/helvetica/Helvetica.otf);
 }
 
+@font-face{
+	font-family:'Arial';
+	src:url(../fonts/arial/Arial.otf);
+}
+
 body{background:#fff;font-size:14px;line-height:1.6;font-family:'Helvetica', 'sans-serif';color:#444;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%}
 
 /* -----------------------------------------
@@ -237,6 +242,18 @@ nav {margin-right:7px}
 #search-links li:not(:last-child):after{content: '';position: absolute; top: 50%; right: 0; transform: translateY(-50%); width: 1px; height: 10px; background-color: #fff;}
 #search-links li a {font-size: 14px; line-height: 24px; color: #fff; text-transform: uppercase; text-decoration: none; margin: 0 22px;}
 #search-links li a:hover {font-weight: 700; color:#77abea}
+
+
+/*-------------------- #stream-download --------------------*/
+#stream-download {text-align: center; padding: 49px 0 52px;}
+#stream-download h2 {font-family: 'Arial', 'sans-serif'; font-size: 42px; line-height: 24px; letter-spacing: 0.03em; font-weight: 700; color: #260086; text-transform: capitalize; margin: 20px auto 26px;}
+#stream-download p {width: 600px; font-size: 16px; line-height: 24px; margin: 0 auto;}
+
+#stream-download-links {margin-top:30px;}
+.stream-download-link {font-size: 15px; line-height: 24px; font-weight: 700; color: #393939!important; text-decoration: none; border:8px solid#278718; border-radius: 100%;display: inline-block;width: 140px; height: 140px; line-height: 125px; margin: 13px;transition: 0.3s all;}
+.stream-download-link:hover {background-color: #278718; transform: scale(1.25); text-decoration: none; color:#fff!important;box-shadow: 0px 0px 21.36px 2.64px rgba(0, 0, 0, 0.19);}
+.stream-download-link:nth-child(2n) {border:8px solid #260086;}
+.stream-download-link:nth-child(2n):hover {background-color: #260086;}
 
 
 #calendarEvent{left:0px;max-height:500px;overflow-y:auto;margin:0 auto}
