@@ -37,106 +37,108 @@
 <body id="homepage">
 
 <header>
+	<a href="./" class="logo">
+		<img src="./_assets_/images/logo.png" alt="Logo">
+	</a>
+
 	<div class="container">
 		<div id="toggles" class="hidden-lg hidden-md">
 			<label for="search-input" id="search-toggle-mobile" class="fa fa-search"></label>
 			<div id="nav-toggle" class="fa fa-bars"></div>
 		</div><!-- /#toggles -->
 
-		<a href="./" class="logo">
-			<img src="./_assets_/images/logo.png" alt="Logo">
-		</a>
+		<div class="col-md-10 col-md-offset-2">
+			<nav>
+				<ul id="nav">
+					<li><a href="./">home</a></li>
+					<li><a href="./">about</a></li>
+					<li><a href="./">calendar</a></li>
+					<li><a href="./">services</a></li>
+					<li><a href="./">books & more</a></li>
+					<li>
+						<a href="./">i want to...</a>
+						<ul>
+							<li>
+								<a href="./">section header</a>
+								<ul>
+									<li><a href="./">ridiculus fringilla sollicituin sit</a></li>
+									<li><a href="./">lorem vehicula porta vulputate</a></li>
+									<li><a href="./">tellus condimentum lorem</a></li>
+									<li><a href="./">commodo pharetra malesuada</a></li>
+									<li><a href="./">mollis ridiculus fringilla</a></li>
+									<li><a href="./">sollicituin sit lorem vehicula</a></li>
+									<li><a href="./">porta vulputate tellus</a></li>
+									<li><a href="./">condimentum lorem commodo</a></li>
+									<li><a href="./">pharetra malesuada mollis</a></li>
+									<li><a href="./">ridiculus fringilla sollicitudin sit</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="./">section header</a>
+								<ul>
+									<li><a href="./">ridiculus fringilla sollicituin sit</a></li>
+									<li><a href="./">lorem vehicula porta vulputate</a></li>
+									<li><a href="./">tellus condimentum lorem</a></li>
+									<li><a href="./">commodo pharetra malesuada</a></li>
+									<li><a href="./">mollis ridiculus fringilla</a></li>
+									<li><a href="./">sollicituin sit lorem vehicula</a></li>
+									<li><a href="./">porta vulputate tellus</a></li>
+									<li><a href="./">condimentum lorem commodo</a></li>
+									<li><a href="./">pharetra malesuada mollis</a></li>
+									<li><a href="./">ridiculus fringilla sollicitudin sit</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="./">section header</a>
+								<ul>
+									<li><a href="./">ridiculus fringilla sollicituin sit</a></li>
+									<li><a href="./">lorem vehicula porta vulputate</a></li>
+									<li><a href="./">tellus condimentum lorem</a></li>
+									<li><a href="./">commodo pharetra malesuada</a></li>
+									<li><a href="./">mollis ridiculus fringilla</a></li>
+									<li><a href="./">sollicituin sit lorem vehicula</a></li>
+									<li><a href="./">porta vulputate tellus</a></li>
+									<li><a href="./">condimentum lorem commodo</a></li>
+									<li><a href="./">pharetra malesuada mollis</a></li>
+									<li><a href="./">ridiculus fringilla sollicitudin sit</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="./">section header</a>
+								<ul>
+									<li><a href="./">ridiculus fringilla sollicituin sit</a></li>
+									<li><a href="./">lorem vehicula porta vulputate</a></li>
+									<li><a href="./">tellus condimentum lorem</a></li>
+									<li><a href="./">commodo pharetra malesuada</a></li>
+									<li><a href="./">mollis ridiculus fringilla</a></li>
+									<li><a href="./">sollicituin sit lorem vehicula</a></li>
+									<li><a href="./">porta vulputate tellus</a></li>
+									<li><a href="./">condimentum lorem commodo</a></li>
+									<li><a href="./">pharetra malesuada mollis</a></li>
+									<li><a href="./">ridiculus fringilla sollicitudin sit</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul> <!-- /#nav -->
+			</nav>
 
-		<nav>
-			<ul id="nav">
-				<li><a href="./">home</a></li>
-				<li><a href="./">about</a></li>
-				<li><a href="./">calendar</a></li>
-				<li><a href="./">services</a></li>
-				<li><a href="./">books & more</a></li>
-				<li>
-					<a href="./">i want to...</a>
-					<ul>
-						<li>
-							<a href="./">section header</a>
-							<ul>
-								<li><a href="./">ridiculus fringilla sollicituin sit</a></li>
-								<li><a href="./">lorem vehicula porta vulputate</a></li>
-								<li><a href="./">tellus condimentum lorem</a></li>
-								<li><a href="./">commodo pharetra malesuada</a></li>
-								<li><a href="./">mollis ridiculus fringilla</a></li>
-								<li><a href="./">sollicituin sit lorem vehicula</a></li>
-								<li><a href="./">porta vulputate tellus</a></li>
-								<li><a href="./">condimentum lorem commodo</a></li>
-								<li><a href="./">pharetra malesuada mollis</a></li>
-								<li><a href="./">ridiculus fringilla sollicitudin sit</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="./">section header</a>
-							<ul>
-								<li><a href="./">ridiculus fringilla sollicituin sit</a></li>
-								<li><a href="./">lorem vehicula porta vulputate</a></li>
-								<li><a href="./">tellus condimentum lorem</a></li>
-								<li><a href="./">commodo pharetra malesuada</a></li>
-								<li><a href="./">mollis ridiculus fringilla</a></li>
-								<li><a href="./">sollicituin sit lorem vehicula</a></li>
-								<li><a href="./">porta vulputate tellus</a></li>
-								<li><a href="./">condimentum lorem commodo</a></li>
-								<li><a href="./">pharetra malesuada mollis</a></li>
-								<li><a href="./">ridiculus fringilla sollicitudin sit</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="./">section header</a>
-							<ul>
-								<li><a href="./">ridiculus fringilla sollicituin sit</a></li>
-								<li><a href="./">lorem vehicula porta vulputate</a></li>
-								<li><a href="./">tellus condimentum lorem</a></li>
-								<li><a href="./">commodo pharetra malesuada</a></li>
-								<li><a href="./">mollis ridiculus fringilla</a></li>
-								<li><a href="./">sollicituin sit lorem vehicula</a></li>
-								<li><a href="./">porta vulputate tellus</a></li>
-								<li><a href="./">condimentum lorem commodo</a></li>
-								<li><a href="./">pharetra malesuada mollis</a></li>
-								<li><a href="./">ridiculus fringilla sollicitudin sit</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="./">section header</a>
-							<ul>
-								<li><a href="./">ridiculus fringilla sollicituin sit</a></li>
-								<li><a href="./">lorem vehicula porta vulputate</a></li>
-								<li><a href="./">tellus condimentum lorem</a></li>
-								<li><a href="./">commodo pharetra malesuada</a></li>
-								<li><a href="./">mollis ridiculus fringilla</a></li>
-								<li><a href="./">sollicituin sit lorem vehicula</a></li>
-								<li><a href="./">porta vulputate tellus</a></li>
-								<li><a href="./">condimentum lorem commodo</a></li>
-								<li><a href="./">pharetra malesuada mollis</a></li>
-								<li><a href="./">ridiculus fringilla sollicitudin sit</a></li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-			</ul> <!-- /#nav -->
-		</nav>
-
-		<div class="right-nav">
-			<ul>
-				<li><a href="./">kids</a></li>
-				<li><a href="./">teens</a></li>
-				<li><a href="./">adults</a></li>
-			</ul>
-		</div>
+			<div id="right-nav">
+				<ul>
+					<li><a href="./">kids</a></li>
+					<li><a href="./">teens</a></li>
+					<li><a href="./">adults</a></li>
+				</ul>
+			</div><!-- /#right-nav -->
+		</div><!-- /.col-md-10.col-md-offset-2 -->
 
 		<div class="social-links hidden-sm hidden-xs">
-			<a href="./" class="fa fa-facebook"></a>
+			<a href="./" class="fa fa-facebook-square"></a>
 			<a href="./" class="fa fa-twitter"></a>
 			<a href="./" class="fa fa-instagram"></a>
 			<a href="./" class="fa fa-pinterest"></a>
-		</div>
-	</div>
+		</div><!-- /.social-links.hidden-sm.hidden-xs -->
+	</div><!-- /.container -->
 </header>
 
 <section id="slider">
@@ -148,7 +150,7 @@
 		<div id="search">
 			<form class="search-form" method="get" action="search.php">
 				<label class="fa fa-search" for="search-input"></label>
-				<input name="q" class="form-control search-input" placeholder="I'm looking for..." type="search" id="search-input">
+				<input name="q" class="form-control search-input" placeholder="Enter search terms..." type="search" id="search-input">
 				<button>search</button>
 			</form><!-- /.search-form -->
 			<ul>

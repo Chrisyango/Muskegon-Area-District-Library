@@ -13,7 +13,12 @@
 #basic styles
 
 -----------------------------------------*/
-body{background:#fff;font-size:14px;line-height:1.6;font-family:sans-serif;color:#444;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%}
+@font-face{
+	font-family:'Helvetica';
+	src:url(../fonts/helvetica/Helvetica.otf);
+}
+
+body{background:#fff;font-size:14px;line-height:1.6;font-family:'Helvetica', 'sans-serif';color:#444;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%}
 
 /* -----------------------------------------
 
@@ -184,26 +189,38 @@ form.loginform label input{display:block;margin-bottom:10px;width:100%;box-sizin
 #main
 
 -----------------------------------------*/
+header{position:relative;z-index:100}
 body{overflow-x:hidden}
+.container{width:1170px;max-width:100%}
 .text-overflow{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #nav-toggle,
 .toggle,
 .toggle2{display:none}
 
-/* Don't forget to accout for span being used in space of a tag for nav items that are not links */
-/*for mega menu addjust as needed*/
-.nav>li>ul {
-    -moz-column-count: 4;
-    -moz-column-gap: 40px;
-    -webkit-column-count: 4;
-    -webkit-column-gap: 40px;
-    column-count: 4;
-    column-gap: 40px;
-    padding:40px
-}
-.nav>li>ul li{display:inline-block;width:100%}
-.nav>li>ul li a{display:block}
-/*for mega menu addjust as needed*/
+/*--------------------  #main --------------------*/
+.logo {position:absolute;top:8px;left:30px;width:235px}
+
+nav{position:relative}
+nav:after{content:'';position:absolute;right:-9px;top:50%;transform:translateY(-50%);width:2px;height:13px;background-color:rgba(0,0,0,.2)}
+nav,
+#nav,
+#right-nav,
+#right-nav ul,
+.social-links {display:inline-block;margin:0;padding:0;font-size:0px}
+nav {margin-right:7px}
+.social-links {position:absolute;top:32px;right:30px}
+.social-links a{font-size:18px;line-height:24px;letter-spacing:0.1em;text-decoration:none;color:#81d973;margin-left:7px}
+#right-nav {margin-left:7px}
+#nav li,
+#right-nav li {display:inline-block;margin:0;padding:32px 12px;}
+#nav li a,
+#nav li span,
+#right-nav li a,
+#right-nav li span {font-size: 16px; font-weight: 700; line-height: 24px; color: #260086; text-decoration: none; text-transform: uppercase;}
+#right-nav li a,
+#right-nav li span {color: #77abea;}
+
+
 
 #calendarEvent{left:0px;max-height:500px;overflow-y:auto;margin:0 auto}
 
@@ -297,6 +314,20 @@ body{overflow-x:hidden}
 	#nav .focused .toggle,#nav .focused .toggle2,#flyout .focused .toggle{display:inline-block;margin-left:8px}
 	#flyout .focused .toggle,#nav .focused .toggle2{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
 	#flyout,#nav{display:block!important}
+
+	#nav>li>ul {
+    -moz-column-count: 4;
+    -moz-column-gap: 40px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 40px;
+    column-count: 4;
+    column-gap: 40px;
+		padding:40px;
+		display:none;
+	}
+	#nav>li>ul li{display:inline-block;width:100%}
+	#nav>li>ul li a{display:block}
+
 
 }
 
