@@ -196,7 +196,7 @@ form.loginform label input{display:block;margin-bottom:10px;width:100%;box-sizin
 -----------------------------------------*/
 header{position:relative;z-index:100}
 body{overflow-x:hidden}
-.container{width:1170px;max-width:100%}
+.container{width:1200px;max-width:100%}
 .text-overflow{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #nav-toggle,
 .toggle,
@@ -247,13 +247,23 @@ nav {margin-right:7px}
 /*-------------------- #stream-download --------------------*/
 #stream-download {text-align: center; padding: 49px 0 52px;}
 #stream-download h2 {font-family: 'Arial', 'sans-serif'; font-size: 42px; line-height: 24px; letter-spacing: 0.03em; font-weight: 700; color: #260086; text-transform: capitalize; margin: 20px auto 26px;}
-#stream-download p {width: 600px; font-size: 16px; line-height: 24px; margin: 0 auto;}
+#stream-download p {width: 600px; max-width: 100%; font-size: 16px; line-height: 24px; margin: 0 auto;}
 
 #stream-download-links {margin-top:30px;}
 .stream-download-link {font-size: 15px; line-height: 24px; font-weight: 700; color: #393939!important; text-decoration: none; border:8px solid#278718; border-radius: 100%;display: inline-block;width: 140px; height: 140px; line-height: 125px; margin: 13px;transition: 0.3s all;}
 .stream-download-link:hover {background-color: #278718; transform: scale(1.25); text-decoration: none; color:#fff!important;box-shadow: 0px 0px 21.36px 2.64px rgba(0, 0, 0, 0.19);}
 .stream-download-link:nth-child(2n) {border:8px solid #260086;}
 .stream-download-link:nth-child(2n):hover {background-color: #260086;}
+
+
+/*-------------------- #new-selections --------------------*/
+#new-selections {position: relative; padding: 71px 0 67px; background-color:#dbe1e9;}
+#new-selections>img:first-of-type {position: absolute; top: 0; left: 0; transform: scaleY(-1);}
+#new-selections>img:last-of-type {position: absolute; bottom: 0; left: 0; transform: scaleX(-1);}
+#new-selections h2 {font-family: 'Arial', 'sans-serif'; font-size: 42px; line-height: 24px; letter-spacing: 0.03em; font-weight: 700; text-transform: capitalize; color: #260086; float: left;margin: 20px 0 19px;}
+#new-selections h2 span {display: block; font-family: 'Helvetica', 'sans-serif'; font-size: 18px; font-weight: 400; letter-spacing: 0; text-transform: uppercase; color: #77abea; margin-top: 8px;}
+
+#books-movies-music {float: right;}
 
 
 #calendarEvent{left:0px;max-height:500px;overflow-y:auto;margin:0 auto}

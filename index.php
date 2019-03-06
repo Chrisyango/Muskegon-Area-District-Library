@@ -184,7 +184,7 @@
 
 	<section id="new-selections">
 		<div class="container">
-			<div id="new-selections-info">
+			<div id="new-selections-info" class="clearfix">
 				<h2>what's new <span>at the library</span></h2>
 				<div id="books-movies-music">
 					<a href="./">books</a>
@@ -201,6 +201,8 @@
 			</div><!-- new-selections-links -->
 			<a href="./" class="see-all">see all new books</a>
 		</div><!-- /.container -->
+		<img src="./_assets_/images/whitespace.png" alt="Whitespace">
+		<img src="./_assets_/images/whitespace.png" alt="Whitespace">
 	</section><!-- /#new-selections -->
 
 	<section id="quick-links">

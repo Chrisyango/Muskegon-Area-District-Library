@@ -228,7 +228,7 @@
 			responsiveClass: true,
 			nav: true,
 			navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-			margin: 20,
+			margin: 40,
 			responsive: {
 				0: {
 					items: newSelectionsItem(1),
@@ -239,8 +239,7 @@
 				},
 				1200: {
 					items: newSelectionsItem(5),
-					loop: false,
-					nav: false,
+					loop: false
 				}
 			}
 		});
