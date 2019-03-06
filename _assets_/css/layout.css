@@ -100,21 +100,21 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-.btn{padding:10px 20px;background:#0f99ee;color:#fff!important;border:0;border-radius:0;display:inline-block;font-size:12px;font-weight:900!important;text-decoration:none;cursor:pointer;line-height:normal;vertical-align:top;font-family:sans-serif;text-transform:uppercase;transition:background .3s}
+.btn{padding:10px 20px;background:#77abea;color:#fff!important;border:0;border-radius:0;display:inline-block;font-size:12px;font-weight:700!important;text-decoration:none;cursor:pointer;line-height:normal;vertical-align:top;font-family:'Helvetica', sans-serif;text-transform:uppercase;transition:background .3s}
 .button:hover,
 a.button:hover,
 button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
-.btn:hover{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#0e8cda}
+.btn:hover{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#77abea}
 .button:active,
 a.button:active,
 button:active,
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active,
-.btn:active{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#0e8cda}
+.btn:active{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#77abea}
 button::-moz-focus-inner,
 input::-moz-focus-inner{border:0;padding:0}
 
@@ -174,7 +174,7 @@ form.loginform label input{display:block;margin-bottom:10px;width:100%;box-sizin
 
 -----------------------------------------*/
 .floating-alert{position:fixed;z-index:99999;bottom:10px;margin:0;right:10px;border:3px solid #fff;background:#000;background:rgba(0,0,0,.9);box-shadow:0 0 10px rgba(0,0,0,.2);color:#fff;padding:30px;font-size:14px;width:350px;}
-.floating-alert h1{color:#ffc140;margin:0 0 10px;font-family:sans-serif;font-weight:bold;text-transform:uppercase;font-size:18px}
+.floating-alert h4{color:#ffc140;margin:0 0 10px;font-family:sans-serif;font-weight:bold;text-transform:uppercase;font-size:18px}
 .floating-alert .btn{padding:8px 10px;margin:20px 0 0 0!important}
 .floating-alert .close{padding:0;background:none!important;color:#fff!important;opacity:1;margin-right:20px}
 
@@ -197,7 +197,7 @@ body{overflow-x:hidden}
 .toggle,
 .toggle2{display:none}
 
-/*--------------------  #main --------------------*/
+/*-------------------- #nav --------------------*/
 .logo {position:absolute;top:8px;left:30px;width:235px}
 
 nav{position:relative}
@@ -220,6 +220,23 @@ nav {margin-right:7px}
 #right-nav li a,
 #right-nav li span {color: #77abea;}
 
+
+/*-------------------- #slider --------------------*/
+#slider {position:relative;height:413px}
+#slider .container {position:absolute;top:50%;left:50%;transform:translate(-50%,-31%);z-index:51;width:664px}
+#slider>img {position:absolute;bottom:0;left:0;z-index:51}
+
+#search {position:relative}
+#search label {display: none;}
+#search input {border-radius:5px;font-size:16px;line-height:24px;color:#afafaf;padding:27px 24px 21px}
+#search input::placeholder {font-size:16px;line-height:24px;color:#afafaf}
+#search button {position: absolute; top: 0; right: 0;font-size: 16px;width:175px;height:50px;border-radius:0 5px 5px 0;}
+#search button i {position: relative; left: 5.5px;}
+#search-links {margin:-17px 0 0;padding:0;text-align:center;font-size:0;}
+#search-links li {display:inline-block; position: relative;}
+#search-links li:not(:last-child):after{content: '';position: absolute; top: 50%; right: 0; transform: translateY(-50%); width: 1px; height: 10px; background-color: #fff;}
+#search-links li a {font-size: 14px; line-height: 24px; color: #fff; text-transform: uppercase; text-decoration: none; margin: 0 22px;}
+#search-links li a:hover {font-weight: 700; color:#77abea}
 
 
 #calendarEvent{left:0px;max-height:500px;overflow-y:auto;margin:0 auto}
@@ -373,7 +390,7 @@ nav {margin-right:7px}
 
 	.floating-alert{width:auto;right:0;left:0;border:0;bottom:0;border-radius:0;padding-left:15px;padding-right:15px}
 	.floating-alert{font-size:12px}
-	.floating-alert h1{margin-bottom:10px;font-size:14px}
+	.floating-alert h4{margin-bottom:10px;font-size:14px}
 	.floating-alert .btn{font-size:10px;padding:7px 12px!important}
 	.share-btns a{height:auto;padding:10px;width:100%;font-size:12px;white-space:nowrap;overflow:hidden}
 	.share-btns i{display:block;line-height:50px!important;font-size:20px}

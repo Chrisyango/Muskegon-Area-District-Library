@@ -151,14 +151,14 @@
 			<form class="search-form" method="get" action="search.php">
 				<label class="fa fa-search" for="search-input"></label>
 				<input name="q" class="form-control search-input" placeholder="Enter search terms..." type="search" id="search-input">
-				<button>search</button>
+				<button>search<i class="fa fa-search"></i></button>
 			</form><!-- /.search-form -->
-			<ul>
-				<li><a href="./">catalog</a></li>
-				<li><a href="./">downloads</a></li>
-				<li><a href="./">research</a></li>
-			</ul>
 		</div><!-- /#search -->
+		<ul id="search-links">
+			<li><a href="./">catalog</a></li>
+			<li><a href="./">downloads</a></li>
+			<li><a href="./">research</a></li>
+		</ul>
 	</div><!-- /.container -->
 	<img src="./_assets_/images/whitespace.png" alt="Whitespace">
 </section><!-- /#slider -->
