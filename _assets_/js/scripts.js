@@ -234,9 +234,14 @@
 				0: {
 					items: newSelectionsItem(1),
 				},
-				600: {
+				450: {
+					items: newSelectionsItem(2),
+				},
+				700: {
 					items: newSelectionsItem(3),
-					
+				},
+				900: {
+					items: newSelectionsItem(4),
 				},
 				1200: {
 					items: newSelectionsItem(5),

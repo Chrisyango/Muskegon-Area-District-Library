@@ -270,7 +270,7 @@ nav,
 
 #books-movies-music {float: right;margin-top:9px}
 #books-movies-music a {position: relative; font-size: 18px; line-height: 24px; text-transform: uppercase; text-decoration: none; color: #260086; margin-left: 51px;}
-#books-movies-music a:first-of-type {font-weight: 700; color: #278718;}
+#books-movies-music a:first-of-type {font-weight: 700; color: #278718; margin: 0;}
 #books-movies-music a:not(:last-of-type):after {content: ''; position: absolute; top: 50%; right: -29px; transform: translateY(-50%); width: 1px; height: 14px; background-color: black;}
 
 #new-selections-links .owl-next,
@@ -302,6 +302,8 @@ a.quick-link span {display: block; overflow: hidden; margin-top: -2px;}
 .news-link-content span {font-family: 'Arial', 'sans-serif'; font-size: 12px; line-height: 24px; font-weight: 700; text-transform: uppercase; color: #77abea; display: block; margin: 0 0 7px;}
 .news-link-content h3 {font-size: 17px; line-height: 27px; text-transform: capitalize; color: #3c3c3c; margin: 0;}
 .news-link-content a {position: absolute; bottom: -17px; left: 50%; transform: translateX(-50%); font-size: 13px; font-weight: 700; height: 35px; width: 174px; border-radius: 20px; background-color: #278718;}
+
+#new-selections-links {max-width: calc(100% - 90px); margin: 0 auto;}
 
 #events {position: absolute; top: -5px; right: -60px; background-color: #dbe1e9; border-radius: 100%; width: 836px; height: 836px;}
 #events img {width: 370px; position: absolute; top: 50%; left: 50%; transform: translate(-49%, -57%);}
@@ -477,6 +479,8 @@ footer {background-color: #260086; padding: 28px 0; font-size: 13px; line-height
 	#freeform #formwizziwmorf tr table tr{display:table-row!important}
 	#freeform #formwizziwmorf tr table td{display:table-cell!important}
 
+	.see-all {font-size: 15px;}
+
 	/*-------------------- #nav --------------------*/
 	nav {margin: 60px 0 15px; width: 100%;background-color: #260086;}
 	header .container {text-align: left;}
@@ -515,6 +519,20 @@ footer {background-color: #260086; padding: 28px 0; font-size: 13px; line-height
 	#search input::placeholder {font-size: 14px;}
 	#search button {height: 40px; font-size: 14px;}
 	#search-links li a {font-size: 13px;}
+
+	/*-------------------- #stream-download --------------------*/
+	#stream-download h2 {font-size: 34px;}
+	#stream-download p {font-size: 15px;}
+	.stream-download-link {font-size: 14px;width:120px; height: 120px; line-height: 100px;}
+
+	/*-------------------- #new-selections --------------------*/
+	#new-selections-info {margin-bottom: 30px;}
+	#new-selections h2 {font-size: 34px;}
+	#new-selections h2 span {font-size: 16px;}
+
+	#new-selections h2,
+	#books-movies-music {float: none;}
+	#books-movies-music {text-align: center;}
 
 }
 
