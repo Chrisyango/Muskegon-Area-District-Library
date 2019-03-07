@@ -105,21 +105,21 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-.btn{padding:10px 20px;background:#77abea;color:#fff!important;border:0;border-radius:0;display:inline-block;font-size:12px;font-weight:700!important;text-decoration:none;cursor:pointer;line-height:normal;vertical-align:top;font-family:'Helvetica', sans-serif;text-transform:uppercase;transition:background .3s}
+.btn{padding:10px 20px;background:#278718;color:#fff!important;border:0;border-radius:0;display:inline-block;font-size:12px;font-weight:700!important;text-decoration:none;cursor:pointer;line-height:normal;vertical-align:top;font-family:'Helvetica', sans-serif;text-transform:uppercase;transition:background .3s}
 .button:hover,
 a.button:hover,
 button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
-.btn:hover{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#77abea}
+.btn:hover{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#278718}
 .button:active,
 a.button:active,
 button:active,
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active,
-.btn:active{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#77abea}
+.btn:active{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#278718}
 button::-moz-focus-inner,
 input::-moz-focus-inner{border:0;padding:0}
 
@@ -209,28 +209,29 @@ main{max-width: 100%; overflow: hidden;}
 .logo {position:absolute;top:8px;left:30px;width:235px}
 
 nav{position:relative}
-nav:after{content:'';position:absolute;right:-9px;top:50%;transform:translateY(-50%);width:2px;height:13px;background-color:rgba(0,0,0,.2)}
+#nav ul {margin: 0; padding: 0;}
 nav,
 #nav,
 #right-nav,
 #right-nav ul,
 .social-links {display:inline-block;margin:0;padding:0;font-size:0px}
-nav {margin-right:7px}
 .social-links {position:absolute;top:32px;right:30px}
 .social-links a{font-size:18px;line-height:24px;letter-spacing:0.1em;text-decoration:none;color:#81d973;margin-left:7px}
+.social-links a:first-of-type {margin: 0};
 #right-nav {margin-left:7px}
 #nav li,
-#right-nav li {display:inline-block;margin:0;padding:32px 12px;}
+#right-nav li {display:inline-block;margin:0;}
 #nav li a,
 #nav li span,
 #right-nav li a,
-#right-nav li span {font-size: 16px; font-weight: 700; line-height: 24px; color: #260086; text-decoration: none; text-transform: uppercase;}
+#right-nav li span {position: relative; font-size: 16px; font-weight: 700; line-height: 24px; color: #260086; text-decoration: none; text-transform: uppercase; padding:32px 12px; display: block;}
 #right-nav li a,
 #right-nav li span {color: #77abea;}
 
 
 /*-------------------- #slider --------------------*/
 #slider {position:relative;height:413px}
+#slider:after {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 50; background-color: rgba(0,0,0,.2);}
 #slider .container {position:absolute;top:50%;left:50%;transform:translate(-50%,-31%);z-index:51;width:664px}
 #slider>img {position:absolute;bottom:0;left:0;z-index:51;width:100%}
 
@@ -238,7 +239,7 @@ nav {margin-right:7px}
 #search label {display: none;}
 #search input {border-radius:5px;font-size:16px;line-height:24px;color:#afafaf;padding:27px 24px 21px}
 #search input::placeholder {font-size:16px;line-height:24px;color:#afafaf}
-#search button {position: absolute; top: 0; right: 0;font-size: 16px;width:175px;height:50px;border-radius:0 5px 5px 0;}
+#search button {position: absolute; top: 0; right: 0;font-size: 16px;width:175px;height:50px;border-radius:0 5px 5px 0;background-color:#77abea}
 #search button i {position: relative; left: 5.5px;}
 #search-links {margin:-17px 0 0;padding:0;text-align:center;font-size:0;}
 #search-links li {display:inline-block; position: relative;}
@@ -366,7 +367,8 @@ footer {background-color: #260086; padding: 28px 0; font-size: 13px; line-height
 .btn-google:hover{border-color:#D34836}
 .btn-reddit:hover{border-color:#ff5700}
 .btn-lg{font-size:16px;padding:14px 30px;border:0;border-radius:3px}
-.floating-share-btn{position:fixed;z-index:99999;top:40%;right:0;height:50px;width:50px;border-radius:0;border:0;background:#F26A39!important;color:#fff!important;line-height:50px;padding:0;box-shadow:0 0 10px rgba(0,0,0,.3);text-align:center}
+.floating-share-btn{position:fixed;z-index:99999;top:40%;right:0;line-height:1.8;border-radius:0;border:0;background:#278718!important;color:#fff!important;padding:10px;box-shadow:0 0 10px rgba(0,0,0,.3);text-align:center}
+.floating-share-btn span {display:block}
 
 /* -----------------------------------------
 
@@ -413,24 +415,56 @@ footer {background-color: #260086; padding: 28px 0; font-size: 13px; line-height
 	#flyout .focused .toggle,#nav .focused .toggle2{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
 	#flyout,#nav{display:block!important}
 
+	nav {margin-left: 220px; margin-right:7px}
+	nav:after{content:'';position:absolute;right:-9px;top:50%;transform:translateY(-50%);width:2px;height:13px;background-color:rgba(0,0,0,.2)}
 	#nav>li>ul {
     -moz-column-count: 4;
-    -moz-column-gap: 40px;
+    -moz-column-gap: 30px;
     -webkit-column-count: 4;
-    -webkit-column-gap: 40px;
+    -webkit-column-gap: 30px;
     column-count: 4;
-    column-gap: 40px;
-		padding:40px;
-		display:none;
+    column-gap: 30px;
+		padding:24px 30px;
+		margin: 0;
+		position: absolute;
+		top: 100%; 
+		left: -85px;
+		right: -183px;
+		height: 315px;
+		background-color: #260086;
+		display: none;
 	}
+	#nav ul>li {padding: 0;}
+	#nav>li:hover>a:after {content: ''; position: absolute; bottom: 0px; left: 50%; transform:translateX(-50%); background: url('../images/triangle.png') center no-repeat; background-size: cover; height: 10px; width: 18px;}
+	#nav>li:hover ul {display: block}
 	#nav>li>ul li{display:inline-block;width:100%}
-	#nav>li>ul li a{display:block}
+	#nav>li>ul li a{display:block; font-size: 13px; line-height: 24px; font-weight: 400; color: #fff; text-transform: capitalize; padding: 0;}
+	#nav>li>ul>li>a {font-family: 'Arial', 'sans-serif'; font-size: 16px; font-weight: 700; color: #77abea; letter-spacing: 0.03em;}
 
+}
 
+@media only screen and (max-width:1280px) {
+	.logo {left: 15px; width: 180px;}
+	nav {margin-left: 200px}
+	#nav li a,
+	#nav li span,
+	#right-nav li a,
+	#right-nav li span {font-size: 14px; padding: 24px 8px;}
+	#nav>li>ul {left: -105px; right: -269px;}
+	#nav>li:hover ul:after {left: 63%;}
+	.social-links {top: 24px; right: 15px;}
+}
+
+@media only screen and (max-width:1040px) {
+	header .container {text-align: right;}
+	#right-nav {margin-right: -15px;}
+	#nav>li>ul {left: -180px; right: -191px;}
+	.social-links {top: 100%; right: 0px; padding: 0 15px; background-color: #fff;}
 }
 
 @media only screen and (max-width:991px) {
 
+	.floating-share-btn {top:unset;bottom:0}
 	/* rz form tables - without page scope this targets editforms and makes
 	 * editing confusing
 	 */
@@ -438,22 +472,27 @@ footer {background-color: #260086; padding: 28px 0; font-size: 13px; line-height
 	#freeform #formwizziwmorf tr table tr{display:table-row!important}
 	#freeform #formwizziwmorf tr table td{display:table-cell!important}
 
+	nav {margin: 60px 0 15px; width: 100%;background-color: #260086;}
+	header .container {text-align: left;}
+	#toggles{float:right}
 	.toggle,
 	.toggle2,
-	#nav-toggle{display:inline-block;cursor:pointer}
+	#nav-toggle{display:inline-block;cursor:pointer;}
+	#nav-toggle {line-height:45px;width:45px;text-align:center;border:1px solid rgba(0,0,0,.15);cursor:pointer;font-size:20px;color:#000;border-radius:4px;margin: 15px 0;}
 	.down-arrow{display:none} /* if not hidden above */
-	#nav{display:none}
-	#nav li{float:none;display:block}
+	#nav{display:none;}
+	#nav li{position: relative; float:none;width: 100%;}
 	#nav li a,
-	#nav li span{padding:20px 30px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px}
-	#nav ul{position:static;top:0;padding:0;background:rgba(0,0,0,.2)}
+	#nav li span{padding:15px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px;color:#fff}
+	#nav ul{position:static;top:0;padding:0;background:rgba(0,0,0,.2);display:none;}
 	#nav li:hover > ul{display:none}
 	#nav ul a,
 	#nav ul span{width:100%}
 	#nav ul ul{left:0}
 	#nav .toggle,
-	#nav .toggle2{position:absolute;right:0;top:0;background:rgba(0,0,0,.2);height:55px;width:55px;line-height:55px;text-align:center}
+	#nav .toggle2{position:absolute;right:0;top:0;background:rgba(0,0,0,.2);height:45px;width:45px;line-height:45px;text-align:center;font-size:20px}
 	#nav li li:hover > a{background:none;color:#fff}
+	#right-nav {display: none;}
 
 	#flyout{display:none}
 	#flyout li{}
