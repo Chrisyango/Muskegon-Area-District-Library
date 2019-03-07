@@ -227,6 +227,7 @@
 			loop: newSelectionsCount > 1 ? true : false,
 			responsiveClass: true,
 			nav: true,
+			autoHeight: true,
 			navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
 			margin: 40,
 			responsive: {
