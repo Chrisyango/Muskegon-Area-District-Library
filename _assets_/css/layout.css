@@ -195,13 +195,14 @@ form.loginform label input{display:block;margin-bottom:10px;width:100%;box-sizin
 
 -----------------------------------------*/
 header{position:relative;z-index:100}
-body{overflow-x:hidden}
+body{overflow-x:hidden;}
+main{max-width: 100%; overflow: hidden;}
 .container{width:1200px;max-width:100%}
 .text-overflow{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #nav-toggle,
 .toggle,
 .toggle2{display:none}
-.see-all {position: absolute; bottom: 84px; left: 50%; transform:translateX(-50%); font-size: 18px; line-height: 24px; text-transform: uppercase; color: #260086!important;}
+.see-all {position: absolute; font-size: 18px; line-height: 24px; text-transform: uppercase; color: #260086!important;}
 .see-all:after {font-family: 'FontAwesome'; content: '\f105'; margin-left: 17px; display: inline-block; font-weight: 700;}
 
 /*-------------------- #nav --------------------*/
@@ -260,6 +261,7 @@ nav {margin-right:7px}
 
 /*-------------------- #new-selections --------------------*/
 #new-selections {position: relative; padding: 71px 0 151px; background-color:#dbe1e9;}
+#new-selections .see-all {bottom: 84px; left: 50%; transform:translateX(-50%);}
 #new-selections>img:first-of-type {position: absolute; top: 0; left: 0; transform: scaleY(-1);width:100%}
 #new-selections>img:last-of-type {position: absolute; bottom: 0; left: 0; transform: scaleX(-1);width:100%}
 #new-selections h2 {font-family: 'Arial', 'sans-serif'; font-size: 42px; line-height: 24px; letter-spacing: 0.03em; font-weight: 700; text-transform: capitalize; color: #260086; float: left;margin: 20px 0 19px;}
@@ -283,6 +285,27 @@ nav {margin-right:7px}
 a.quick-link {font-size: 16px; line-height: 24px; font-weight: 700; text-transform: uppercase; text-decoration: none; color: #393939;}
 a.quick-link span {display: block; overflow: hidden; margin-top: -2px;}
 .quick-link-img {width: 55px; height: 39px; float: left; margin-right: 15px;}
+
+
+/*-------------------- #news-events --------------------*/
+#news-events {position: relative; padding: 94px 0 327px;}
+#news-events .container {width: 1293px;}
+#news-events h2 {font-family: 'Arial', 'sans-serif'; font-size: 42px; line-height: 24px; font-weight: 700; letter-spacing: 0.03em; text-transform: capitalize; color: #260086; margin-bottom: 32px;}
+
+#news {position: relative;}
+#news .see-all {bottom: -86px; left: 0;}
+.news-link {position: relative; display: inline-block; border-radius: 5px; text-align: center; width: 370px; margin-right: 27px; box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1); z-index: 1;}
+.news-link-img {height: 260px; width: 100%; border-radius:5px 5px 0 0;}
+
+.news-link-content {padding: 23px 30px 41px; background-color: #fff;}
+.news-link-content span {font-family: 'Arial', 'sans-serif'; font-size: 12px; line-height: 24px; font-weight: 700; text-transform: uppercase; color: #77abea; display: block; margin: 0 0 7px;}
+.news-link-content h3 {font-size: 17px; line-height: 27px; text-transform: capitalize; color: #3c3c3c; margin: 0;}
+.news-link-content a {position: absolute; bottom: -17px; left: 50%; transform: translateX(-50%); font-size: 13px; font-weight: 700; height: 35px; width: 174px; border-radius: 20px; background-color: #278718;}
+
+
+#events {position: absolute; top: -5px; right: -60px; background-color: #dbe1e9; border-radius: 100%; width: 836px; height: 836px;}
+#events img {width: 370px; position: absolute; top: 50%; left: 50%; transform: translate(-49%, -57%);}
+#events .see-all {bottom: 166px; left: 50%; transform: translateX(-104%);}
 
 
 /* -----------------------------------------

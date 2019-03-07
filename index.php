@@ -234,18 +234,23 @@
 
 	<section id="news-events">
 		<div class="container">
+			<h2>news & events</h2>
 			<div id="news">
 				<div class="news-link">
-					<img src="./_assets_/images/news1.jpg" alt="Picture of books">
-					<span>dec. 27, 2018</span>
-					<h3>news post title mattis condimentum purus mollis ornare</h3>
-					<a href="./" class="btn">read more</a>
+					<div class="news-link-img" style="background: url('./_assets_/images/news1.jpg') center no-repeat; background-size: cover;"></div>
+					<div class=news-link-content>
+						<span>dec. 27, 2018</span>
+						<h3>news post title mattis condimentum purus mollis ornare</h3>
+						<a href="./" class="btn">read more</a>
+					</div><!-- /.news-link-content -->
 				</div><!-- /.news-link -->
 				<div class="news-link">
-					<img src="./_assets_/images/news2.jpg" alt="Picture of books">
-					<span>dec. 18, 2018</span>
-					<h3>dolor nibh quam tristique tellus condimentum etiam mollis ornare</h3>
-					<a href="./" class="btn">read more</a>
+				<div class="news-link-img" style="background: url('./_assets_/images/news2.jpg') center no-repeat; background-size: cover;"></div>
+					<div class="news-link-content">
+						<span>dec. 18, 2018</span>
+						<h3>dolor nibh quam tristique tellus condimentum etiam mollis ornare</h3>
+						<a href="./" class="btn">read more</a>
+					</div><!-- /.news-link-content -->
 				</div><!-- /.news-link -->
 				<a href="./" class="see-all">see all news</a>
 			</div><!-- /#news -->
