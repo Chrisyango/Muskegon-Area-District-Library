@@ -266,7 +266,7 @@
 <footer>
 	<div class="container">
 		<div id="footer-left">
-			<span><strong>&copy; 2018 Muskegon Area District Library</strong></span>
+			<strong>&copy; 2018 Muskegon Area District Library</strong>
 			<a href="./">contact us</a>
 			<a href="./">location & hours</a>
 		</div><!-- /#footer-left -->

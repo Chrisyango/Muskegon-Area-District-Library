@@ -302,10 +302,24 @@ a.quick-link span {display: block; overflow: hidden; margin-top: -2px;}
 .news-link-content h3 {font-size: 17px; line-height: 27px; text-transform: capitalize; color: #3c3c3c; margin: 0;}
 .news-link-content a {position: absolute; bottom: -17px; left: 50%; transform: translateX(-50%); font-size: 13px; font-weight: 700; height: 35px; width: 174px; border-radius: 20px; background-color: #278718;}
 
-
 #events {position: absolute; top: -5px; right: -60px; background-color: #dbe1e9; border-radius: 100%; width: 836px; height: 836px;}
 #events img {width: 370px; position: absolute; top: 50%; left: 50%; transform: translate(-49%, -57%);}
 #events .see-all {bottom: 166px; left: 50%; transform: translateX(-104%);}
+
+
+/*-------------------- footer --------------------*/
+footer {background-color: #260086; padding: 28px 0; font-size: 13px; line-height: 44px; color: #fff;}
+
+#footer-left {float: left;}
+#footer-left strong {text-transform: capitalize;}
+#footer-left a {position: relative; font-weight: 700; text-transform: capitalize; text-decoration: none; color: #77abea; margin-left: 20px;}
+#footer-left a:after {content: ''; position: absolute; left: -11px; top: 50%; transform: translateY(-55%); width: 2px; height: 10px; background-color: #fff;}
+
+#footer-right {float: right;}
+#footer-right a {font-weight: 700; text-transform: capitalize; text-decoration: none; color: #fff;}
+#footer-right span a {color: #77abea; margin: 0;}
+#footer-right span {position: relative; margin-right: 20px;}
+#footer-right span:after {content: ''; position: absolute; top: 50%; right: -12px; transform: translateY(-55%); width: 2px; height: 10px; background-color: #fff;}
 
 
 /* -----------------------------------------
