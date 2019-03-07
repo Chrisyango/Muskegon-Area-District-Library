@@ -277,6 +277,14 @@ nav {margin-right:7px}
 
 #calendarEvent{left:0px;max-height:500px;overflow-y:auto;margin:0 auto}
 
+
+/*-------------------- #quick-links --------------------*/
+#quick-links {padding: 63px 0;}
+a.quick-link {font-size: 16px; line-height: 24px; font-weight: 700; text-transform: uppercase; text-decoration: none; color: #393939;}
+a.quick-link span {display: block; overflow: hidden; margin-top: -2px;}
+.quick-link-img {width: 55px; height: 39px; float: left; margin-right: 15px;}
+
+
 /* -----------------------------------------
 
 #inner

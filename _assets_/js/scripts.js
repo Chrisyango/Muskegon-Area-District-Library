@@ -254,7 +254,7 @@
 			responsiveClass: true,
 			nav: true,
 			navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-			margin: 20,
+			margin: 40,
 			responsive: {
 				0: {
 					items: quickLinkItem(1),

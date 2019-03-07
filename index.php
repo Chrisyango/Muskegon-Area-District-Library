@@ -209,24 +209,24 @@
 		<div class="container">
 			<div id="quick-links-wrapper" class="owl-carousel">
 				<a href="./" class="quick-link">
-					<img src="./_assets_/images/credit-card.png" alt="Card">
-					get a library card
+					<div class="quick-link-img" style="background: url('./_assets_/images/credit-card.png') center no-repeat; background-size: cover;"></div>
+					<span>get a library card</span>
 				</a><!--/.quick-link-link-->
 				<a href="./" class="quick-link">
-					<img src="./_assets_/images/check.png" alt="Checkmark">
-					reserve a room
+					<div class="quick-link-img" style="background: url('./_assets_/images/check.png') center no-repeat; background-size: cover;"></div>
+					<span>reserve a room</span>
 				</a><!--/.quick-link-link-->
 				<a href="./" class="quick-link">
-					<img src="./_assets_/images/users.png" alt="Volunteer">
-					volunteer at the library
+					<div class="quick-link-img" style="background: url('./_assets_/images/users.png') center no-repeat; background-size: cover;"></div>
+					<span>volunteer at the library</span>
 				</a><!--/.quick-link-->
 				<a href="./" class="quick-link">
-					<img src="./_assets_/images/handshake.png" alt="Handshake">
-					support the library
+					<div class="quick-link-img" style="background: url('./_assets_/images/handshake.png') center no-repeat; background-size: cover;"></div>
+					<span>support the library</span>
 				</a><!--/.quick-link-->
 				<a href="./" class="quick-link">
-					<img src="./_assets_/images/book-open.png" alt="Catalog">
-					online catalog
+					<div class="quick-link-img" style="background: url('./_assets_/images/book-open.png') center no-repeat; background-size: cover;"></div>
+					<span>online catalog</span>
 				</a><!--/.quick-link-->
 			</div><!-- /#quick-links-wrapper.owl-carousel -->
 		</div><!-- /.container -->
