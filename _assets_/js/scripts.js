@@ -259,19 +259,25 @@
 			responsiveClass: true,
 			nav: true,
 			navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-			margin: 40,
+			margin: 15,
 			responsive: {
 				0: {
-					items: quickLinkItem(1),
+					items: newSelectionsItem(1),
 				},
-				600: {
-					items: quickLinkItem(3),
-					
+				450: {
+					items: newSelectionsItem(2),
+				},
+				700: {
+					items: newSelectionsItem(3),
+				},
+				900: {
+					items: newSelectionsItem(4),
 				},
 				1200: {
 					items: quickLinkItem(5),
 					loop: false,
 					nav: false,
+					margin: 40
 				}
 			}
 		});

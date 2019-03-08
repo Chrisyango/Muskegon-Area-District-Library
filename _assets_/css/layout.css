@@ -15,14 +15,18 @@
 -----------------------------------------*/
 @font-face{
 	font-family:'Helvetica';
-	src:url(../fonts/helvetica/Helvetica.otf);
+	src:url(../fonts/helvetica/Helvetica.woff) format('woff'), 
+	url(../fonts/helvetica/Helvetica.woff2) format('woff2');
+	font-weight: normal;
+	font-style: normal;;
 }
-
 @font-face{
 	font-family:'Arial';
-	src:url(../fonts/arial/Arial.otf);
+	src:url(../fonts/arial/ArialMT.woff) format('woff'),
+	url(../fonts/arial/ArialMT.woff2) format('woff2');
+	font-weight: normal;
+	font-style: normal;
 }
-
 body{background:#fff;font-size:14px;line-height:1.6;font-family:'Helvetica', 'sans-serif';color:#444;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%}
 
 /* -----------------------------------------
@@ -283,9 +287,14 @@ nav,
 
 /*-------------------- #quick-links --------------------*/
 #quick-links {padding: 63px 0;}
-a.quick-link {font-size: 16px; line-height: 24px; font-weight: 700; text-transform: uppercase; text-decoration: none; color: #393939;}
-a.quick-link span {display: block; overflow: hidden; margin-top: -2px;}
-.quick-link-img {width: 55px; height: 39px; float: left; margin-right: 15px;}
+#quick-links-wrapper {max-width: calc(100% - 30px); margin: 0 auto;}
+#quick-links-wrapper .owl-prev,
+#quick-links-wrapper .owl-next {position: absolute; top: 50%; left: -15px; transform: translateY(-60%); font-size: 28px;}
+#quick-links-wrapper .owl-next {left: unset; right: -15px}
+
+a.quick-link {font-size: 16px; line-height: 24px; font-weight: 700; text-transform: uppercase; text-decoration: none; color: #393939; display: inline-block; width: 100%; padding: 60px 0}
+a.quick-link span {position: absolute; top: 50%; left: 50%; transform: translate(-15%, -50%); width: 65%;}
+.quick-link-img {position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 55px; height: 39px;}
 
 
 /*-------------------- #news-events --------------------*/
@@ -534,6 +543,9 @@ footer {background-color: #260086; padding: 28px 0; font-size: 13px; line-height
 	#books-movies-music {float: none;}
 	#books-movies-music {text-align: center;}
 
+	/*-------------------- #quick-links --------------------*/
+	a.quick-links span {transform: translate(-25%, -50%);}
+
 }
 
 	/* All Mobile Sizes (devices and browser) */
@@ -550,6 +562,10 @@ footer {background-color: #260086; padding: 28px 0; font-size: 13px; line-height
 	#search input {padding: 19px 125px 19px 15px;}
 	#search button {font-size: 13px; width: 115px}
 	#search-links li a {font-size: 12px; margin: 0 20px}
+
+	/*-------------------- #quick-links --------------------*/
+	.quick-link-img {transform: translate(30%, -50%);}
+
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
