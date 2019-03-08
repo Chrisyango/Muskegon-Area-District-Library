@@ -191,21 +191,21 @@
 				</div><!-- /#tabs -->
 			</div><!-- /#new-selections-info -->
 			<div id="tabs-content">
-				<div id="new-selections-links" class="owl-carousel active">
+				<div class="owl-carousel active">
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book1.png" alt="Book 1"></a>
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book2.png" alt="Book 2"></a>
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book3.png" alt="Book 3"></a>
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book4.png" alt="Book 4"></a>
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book5.png" alt="Book 5"></a>
 				</div><!-- #new-selections-links -->
-				<div id="new-selections-links" class="owl-carousel">
+				<div class="owl-carousel">
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book2.png" alt="Book 2"></a>
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book2.png" alt="Book 2"></a>
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book2.png" alt="Book 2"></a>
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book2.png" alt="Book 2"></a>
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book2.png" alt="Book 2"></a>
 				</div><!-- #new-selections-links -->
-				<div id="new-selections-links" class="owl-carousel">
+				<div class="owl-carousel">
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book3.png" alt="Book 3"></a>
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book3.png" alt="Book 3"></a>
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book3.png" alt="Book 3"></a>
