@@ -491,7 +491,7 @@ footer {background-color: #260086; padding: 28px 0; font-size: 13px; line-height
 
 @media only screen and (max-width:991px) {
 
-	.floating-share-btn {top:unset;bottom:0}
+	.floating-share-btn {top:unset;bottom:54px}
 	/* rz form tables - without page scope this targets editforms and makes
 	 * editing confusing
 	 */
@@ -560,8 +560,16 @@ footer {background-color: #260086; padding: 28px 0; font-size: 13px; line-height
 
 	/*-------------------- #news-events --------------------*/
 	#news-events {padding-top: 30px;}
+	#news-events h2 {font-size: 34px;}
 	.news-link,
 	.news-link:last-of-type {display: block; margin: 40px auto;}
+	.news-link-content h3 {font-size: 16px;}
+	.news-link-content a {font-size: 12px;}
+
+	/*-------------------- footer --------------------*/
+	footer {line-height: 20px; font-size: 12px;}
+	#footer-left,
+	#footer-right {float: none;}
 
 }
 
