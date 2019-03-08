@@ -2,9 +2,9 @@
 
 	Theme Name: Muskegan Area District Library
 	Front-end Developer: Chris Yang
-	Author Design: Samir Alley @samiralley | Tom Gooden @good3n
+	Author Design: Alex Parent
 	Author URI: http://www.revize.com/
-	Date: March 3, 2019
+	Date: March 6, 2019
 
 -----------------------------------------------------------------------------------*/
 
@@ -197,16 +197,14 @@
 	// end calendar resize handler
 
 	// Tabs
-	$('#tabs li a').on('click keypress', function(e) {
-		$('#tabs li, #tabs-content .current').removeClass('current').removeClass('fadeInLeft');
-		$(this).parent().addClass('current');
-
-		var currentTab = $(this).attr('href');
-		
-		e.preventDefault();
-		$(currentTab).addClass('current animated fadeInLeft');
-		$(currentTab).find('h2').focus();
-	})
+	$('#tabs>a').on('click keyup', function(event) {
+		if (event.key === 'Enter' || event.type === 'click') {
+			event.preventDefault();
+			$('#tabs>a, #tabs-content>div').removeClass('active');
+			$(this).addClass('active');
+			$('#tabs-content>div').eq($(this).index()).addClass('active');
+		}
+	});
 
 	// bxSlider
 	if(typeof $.fn.bxSlider !== "undefined"){
@@ -223,7 +221,7 @@
 		const newSelectionsItem = function(num) {
 			return (newSelectionsCount >= num ? num : newSelectionsCount);
 		}
-		$("#new-selections-links").owlCarousel({
+		$("#tabs-content>div").owlCarousel({
 			loop: newSelectionsCount > 1 ? true : false,
 			responsiveClass: true,
 			nav: true,
@@ -292,17 +290,6 @@
 	});
 
 	$window.ready(function(){
-
-		// matchHeight
-		if(typeof $.fn.matchHeight !== "undefined"){
-			$('.equal').matchHeight({
-				//defaults
-				byRow: true,
-				property: 'height', // height or min-height
-				target: null,
-				remove: false
-			});
-		}
 
 		// Animations http://www.oxygenna.com/tutorials/scroll-animations-using-waypoints-js-animate-css
 		function onScrollInit( items, trigger ) {
@@ -399,20 +386,6 @@
 
 		};
 		$('.v-align').flexVerticalCenter();
-
-
-		// Remove matchHeight on document center pages
-		if($('#RZdocument_center').length){
-			$('.aside,.entry').matchHeight({remove:true});
-
-			if(window.matchMedia("(min-width: 992px)").matches){
-				setInterval(function(){
-					if($('.post').outerHeight() + 300 > $('.entry').outerHeight()){
-						$('.aside').css('height',$('.entry').outerHeight() + 'px');
-					}
-				}, 200);
-			}
-		}
 
 
 	}); // Ready

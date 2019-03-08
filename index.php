@@ -184,19 +184,35 @@
 		<div class="container">
 			<div id="new-selections-info" class="clearfix">
 				<h2>what's new <span>at the library</span></h2>
-				<div id="books-movies-music">
-					<a href="./">books</a>
+				<div id="tabs">
+					<a href="./" class="active">books</a>
 					<a href="./">movies</a>
 					<a href="./">music</a>
-				</div><!-- /#books-movies-music -->
+				</div><!-- /#tabs -->
 			</div><!-- /#new-selections-info -->
-			<div id="new-selections-links" class="owl-carousel">
-				<a href="./" class="new-selections-link"><img src="./_assets_/images/book1.png" alt="Book 1"></a>
-				<a href="./" class="new-selections-link"><img src="./_assets_/images/book2.png" alt="Book 2"></a>
-				<a href="./" class="new-selections-link"><img src="./_assets_/images/book3.png" alt="Book 3"></a>
-				<a href="./" class="new-selections-link"><img src="./_assets_/images/book4.png" alt="Book 4"></a>
-				<a href="./" class="new-selections-link"><img src="./_assets_/images/book5.png" alt="Book 5"></a>
-			</div><!-- new-selections-links -->
+			<div id="tabs-content">
+				<div id="new-selections-links" class="owl-carousel active">
+					<a href="./" class="new-selections-link"><img src="./_assets_/images/book1.png" alt="Book 1"></a>
+					<a href="./" class="new-selections-link"><img src="./_assets_/images/book2.png" alt="Book 2"></a>
+					<a href="./" class="new-selections-link"><img src="./_assets_/images/book3.png" alt="Book 3"></a>
+					<a href="./" class="new-selections-link"><img src="./_assets_/images/book4.png" alt="Book 4"></a>
+					<a href="./" class="new-selections-link"><img src="./_assets_/images/book5.png" alt="Book 5"></a>
+				</div><!-- #new-selections-links -->
+				<div id="new-selections-links" class="owl-carousel">
+					<a href="./" class="new-selections-link"><img src="./_assets_/images/book2.png" alt="Book 2"></a>
+					<a href="./" class="new-selections-link"><img src="./_assets_/images/book2.png" alt="Book 2"></a>
+					<a href="./" class="new-selections-link"><img src="./_assets_/images/book2.png" alt="Book 2"></a>
+					<a href="./" class="new-selections-link"><img src="./_assets_/images/book2.png" alt="Book 2"></a>
+					<a href="./" class="new-selections-link"><img src="./_assets_/images/book2.png" alt="Book 2"></a>
+				</div><!-- #new-selections-links -->
+				<div id="new-selections-links" class="owl-carousel">
+					<a href="./" class="new-selections-link"><img src="./_assets_/images/book3.png" alt="Book 3"></a>
+					<a href="./" class="new-selections-link"><img src="./_assets_/images/book3.png" alt="Book 3"></a>
+					<a href="./" class="new-selections-link"><img src="./_assets_/images/book3.png" alt="Book 3"></a>
+					<a href="./" class="new-selections-link"><img src="./_assets_/images/book3.png" alt="Book 3"></a>
+					<a href="./" class="new-selections-link"><img src="./_assets_/images/book3.png" alt="Book 3"></a>
+				</div><!-- #new-selections-links -->
+			</div>
 			<a href="./" class="see-all">see all new books</a>
 		</div><!-- /.container -->
 		<img src="./_assets_/images/whitespace.png" alt="Whitespace">

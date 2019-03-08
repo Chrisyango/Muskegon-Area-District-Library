@@ -2,9 +2,9 @@
 
 	Theme Name:Muskegan Area District Library
 	Front-end Developer:Chris Yang
-	Author Design:Samir Alley @samiralley | Tom Gooden @good3n
+	Author Design:Alex Parent
 	Author URI:http://www.revize.com/
-	Date:March 3, 2019
+	Date:March 6, 2019
 
 -----------------------------------------------------------------------------------*/
 
@@ -270,14 +270,18 @@ nav,
 #new-selections h2{font-family:'Arial', 'sans-serif';font-size:42px;line-height:24px;letter-spacing:0.03em;font-weight:700;text-transform:capitalize;color:#260086;float:left;margin:20px 0 19px}
 #new-selections h2 span{display:block;font-family:'Helvetica', 'sans-serif';font-size:18px;font-weight:400;letter-spacing:0;text-transform:uppercase;color:#77abea;margin-top:8px}
 
-#books-movies-music{float:right;margin-top:9px}
-#books-movies-music a{position:relative;font-size:18px;line-height:24px;text-transform:uppercase;text-decoration:none;color:#260086;margin-left:51px}
-#books-movies-music a:first-of-type{font-weight:700;color:#278718;margin:0}
-#books-movies-music a:not(:last-of-type):after{content:'';position:absolute;top:50%;right:-29px;transform:translateY(-50%);width:1px;height:14px;background-color:black}
+#tabs{float:right;margin-top:9px}
+#tabs a{position:relative;font-size:18px;line-height:24px;text-transform:uppercase;text-decoration:none;color:#260086;margin-left:51px}
+#tabs a:first-of-type {margin:0}
+#tabs a.active{font-weight:700;color:#278718}
+#tabs a:not(:last-of-type):after{content:'';position:absolute;top:50%;right:-29px;transform:translateY(-50%);width:1px;height:14px;background-color:black}
 
-#new-selections-links .owl-next,
-#new-selections-links .owl-prev{position:absolute;top:50%;left:-45px;transform:translateY(-50%);font-size:36px;color:#77abea}
-#new-selections-links .owl-next{left:unset;right:-45px}
+#tabs-content{position:relative;height:272px}
+#tabs-content>div {position:absolute;top:0;left:50%;transform:translateX(-50%);opacity:0;z-index:-1}
+#tabs-content>div.active {opacity:1;z-index:1;}
+#tabs-content>div .owl-next,
+#tabs-content>div .owl-prev{position:absolute;top:50%;left:-45px;transform:translateY(-50%);font-size:36px;color:#77abea}
+#tabs-content>div .owl-next{left:unset;right:-45px}
 .new-selections-link img{height:272px}
 
 #calendarEvent{left:0px;max-height:500px;overflow-y:auto;margin:0 auto}
@@ -297,7 +301,7 @@ a.quick-link span{position:absolute;top:50%;left:50%;transform:translate(-2%, -5
 
 
 /*-------------------- #news-events --------------------*/
-#news-events{position:relative;padding:100px 0 327px;max-width:100%;overflow:hidden}
+#news-events{position:relative;padding:100px 0 310px;max-width:100%;overflow:hidden}
 #news-events .container{width:1293px}
 #news-events h2{font-family:'Arial', 'sans-serif';font-size:42px;line-height:24px;font-weight:700;letter-spacing:0.03em;text-transform:capitalize;color:#260086;margin-bottom:32px}
 
@@ -484,7 +488,7 @@ footer{background-color:#260086;padding:28px 0;font-size:13px;line-height:44px;c
 	.social-links{top:24px;right:15px}
 
 	/*-------------------- #new-selections --------------------*/
-	#new-selections-links{max-width:calc(100% - 90px);margin:0 auto}
+	#tabs-content>div{max-width:calc(100% - 90px);margin:0 auto}
 
 	/*-------------------- #news-events --------------------*/
 	#news,
@@ -568,9 +572,9 @@ footer{background-color:#260086;padding:28px 0;font-size:13px;line-height:44px;c
 	#new-selections h2 span{font-size:16px}
 
 	#new-selections h2,
-	#books-movies-music{float:none}
-	#books-movies-music{text-align:center}
-	#books-movies-music a{font-size:16px}
+	#tabs{float:none}
+	#tabs{text-align:center}
+	#tabs a{font-size:16px}
 
 	/*-------------------- #quick-links --------------------*/
 	a.quick-link span{transform:translate(-25%, -50%)}
