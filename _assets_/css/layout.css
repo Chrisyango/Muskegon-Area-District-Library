@@ -466,7 +466,7 @@ footer{background-color:#260086;padding:28px 0;font-size:13px;line-height:44px;c
 		display:none;
 	}
 	#nav ul>li{padding:0}
-	#nav>li:hover>a:after{content:'';position:absolute;bottom:0px;left:50%;transform:translateX(-50%);background:url('../images/triangle.png') center no-repeat;background-size:cover;height:10px;width:18px}
+	#nav>li:hover>a.mega:after{content:'';position:absolute;bottom:0px;left:50%;transform:translateX(-50%);background:url('../images/triangle.png') center no-repeat;background-size:cover;height:10px;width:18px}
 	#nav>li:hover ul{display:block}
 	#nav>li>ul li{display:inline-block;width:100%}
 	#nav>li>ul li a{display:block;font-size:13px;line-height:24px;font-weight:400;color:#fff;text-transform:capitalize;padding:0}
@@ -635,10 +635,13 @@ footer{background-color:#260086;padding:28px 0;font-size:13px;line-height:44px;c
 }
 
 @media print{
+	header,
+	footer,
+	#slider,
 	.nav-wrap,
 	.sidebar,
 	#flyout-wrap,
-	.breadcrumbs
+	#breadcrumbs,
 	.e-notify{display:none!important}
 	a[href]:after{content:none!important}
 }

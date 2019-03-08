@@ -88,6 +88,7 @@
 	// $("#nav > li:has(ul)").addClass('first-parent').children("a,span").append('<i class="fa fa-angle-down down-arrow">');
 
 	// Menu Toggles
+	$("#nav >li").has("ul").find('a').addClass('mega')
 	$("#nav >li>ul,#flyout >li>ul").addClass('first-level');
 	$("#nav  li ul ul").addClass('second-level');
 	$("#nav >li:has(ul)").find("a:first").append('<i class="fa fa-angle-down toggle" tabindex="0">');
@@ -200,9 +201,18 @@
 	$('#tabs>a').on('click keyup', function(event) {
 		if (event.key === 'Enter' || event.type === 'click') {
 			event.preventDefault();
+			const index = $(this).index();
+			const seeAll = $('#new-selections>.container>a.see-all')
 			$('#tabs>a, #tabs-content>div').removeClass('active');
 			$(this).addClass('active');
-			$('#tabs-content>div').eq($(this).index()).addClass('active');
+			$('#tabs-content>div').eq(index).addClass('active');
+			if(index === 0) {
+				seeAll.text('see all new books');
+			} else if(index === 1) {
+				seeAll.text('see all new movies');
+			} else if(index === 2) {
+				seeAll.text('see all new music');
+			}
 		}
 	});
 
@@ -278,16 +288,6 @@
 			}
 		});
 	}
-
-	// Preloader
-	$window.load(function() {
-
-		setTimeout(function(){
-			$body.addClass('loaded');
-			 $('#loader-wrapper').fadeOut();
-		}, 600);
-
-	});
 
 	$window.ready(function(){
 

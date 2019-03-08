@@ -191,21 +191,21 @@
 				</div><!-- /#tabs -->
 			</div><!-- /#new-selections-info -->
 			<div id="tabs-content">
-				<div class="owl-carousel active">
+				<div id="new-books" class="owl-carousel active">
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book1.png" alt="Book 1"></a>
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book2.png" alt="Book 2"></a>
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book3.png" alt="Book 3"></a>
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book4.png" alt="Book 4"></a>
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book5.png" alt="Book 5"></a>
 				</div><!-- #new-selections-links -->
-				<div class="owl-carousel">
+				<div id="new-movies" class="owl-carousel">
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book2.png" alt="Book 2"></a>
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book2.png" alt="Book 2"></a>
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book2.png" alt="Book 2"></a>
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book2.png" alt="Book 2"></a>
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book2.png" alt="Book 2"></a>
 				</div><!-- #new-selections-links -->
-				<div class="owl-carousel">
+				<div id="new-music" class="owl-carousel">
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book3.png" alt="Book 3"></a>
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book3.png" alt="Book 3"></a>
 					<a href="./" class="new-selections-link"><img src="./_assets_/images/book3.png" alt="Book 3"></a>
@@ -273,7 +273,7 @@
 				<img src="./_assets_/images/events.png" alt="Events">
 				<a href="./" class="see-all">see all events</a>
 			</div>
-		</div><!-- /.container
+		</div><!-- /.container -->
 	</section><!-- /#news-events -->
 </main>
 
