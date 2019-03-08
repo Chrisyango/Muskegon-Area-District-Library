@@ -141,6 +141,7 @@
 <section id="slider">
 	<ul class="bxslider">
 		<li style="background: url('./_assets_/images/hero.jpg') center no-repeat;background-size: cover;"></li>
+		<li style="background: url('./_assets_/images/hero.jpg') center no-repeat;background-size: cover;"></li>
 	</ul><!-- /.bxslider -->
 
 	<div class="container">

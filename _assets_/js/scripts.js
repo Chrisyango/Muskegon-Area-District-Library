@@ -267,17 +267,15 @@
 				450: {
 					items: newSelectionsItem(2),
 				},
-				700: {
+				800: {
 					items: newSelectionsItem(3),
-				},
-				900: {
-					items: newSelectionsItem(4),
+					margin: 60
 				},
 				1200: {
 					items: quickLinkItem(5),
 					loop: false,
 					nav: false,
-					margin: 40
+					margin: 100
 				}
 			}
 		});
