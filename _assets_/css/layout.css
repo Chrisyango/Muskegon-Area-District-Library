@@ -42,8 +42,8 @@ h3{font-size:28px}
 h4{font-size:21px}
 h5{font-size:16px}
 h6{font-size:14px}
-.header{font-size:28px;color:#111;margin-bottom:30px}
-.subheader{font-size:21px;color:#111;margin-bottom:30px}
+.header{font-family: 'Arial';font-size:28px;font-weight:700;line-height:24px;color:#111;margin-bottom:30px; display: block;letter-spacing: 0.03em;}
+.subheader{font-family: 'Arial';font-size:22px;font-weight:700;line-height:24px;color:#278718;margin:27px 0 17px; text-transform: capitalize; display:block;letter-spacing: 0.03em;}
 p{margin:0 0 30px 0}
 em{font-style:italic}
 strong,b{font-weight:bold}
@@ -338,19 +338,31 @@ footer {background-color: #260086; padding: 28px 0; font-size: 13px; line-height
 #inner
 
 -----------------------------------------*/
-#flyout{margin:0;padding:0}
-#flyout li{margin:0;display:block;position:relative}
-#flyout a,
-#flyout span{text-decoration:none;padding:15px 20px;display:block;border-bottom:1px solid #000}
-#flyout ul{display:none;position:absolute;top:0;left:100%;margin:0;padding:0;background:#aaa}
-#flyout ul a,
-#flyout ul span{font-size:13px;padding:10px 15px;width:180px}
-#flyout li:hover > ul{display:block}
+#freeform #slider {height: 412px;}
 
-.breadcrumbs{font-size:13px;text-transform:capitalize}
-.breadcrumbs p{margin:0}
-.breadcrumbs a{text-decoration:none}
-.breadcrumbs i{font-size:13px;margin:0 4px}
+/*-------------------- #flyout --------------------*/
+#flyout{margin:0;padding:0}
+#flyout li{margin:0;display:block;position:relative;}
+#flyout a,
+#flyout span{font-size: 14px; color: #260086; text-transform: capitalize; text-decoration:none;padding:10.5px 0;display:block;}
+#flyout ul{display: none; position:absolute;top:0;left:100%;margin:0;padding:0;background:#278718;z-index: 51;}
+#flyout ul a,
+#flyout ul span{font-size:13px;padding:10px 15px;width:180px;color:#fff;border-bottom:1px solid rgba(0,0,0,.15)}
+#flyout li:hover > ul{display:block}
+#flyout-toggle,
+#flyout-header {font-family: 'Arial'; font-weight: 700; font-size: 22px; line-height: 24px; color: #77abea; text-transform: capitalize; display: block; margin-bottom: 15px;}
+
+/*-------------------- #entry --------------------*/
+#entry {padding: 28px 0 3px;}
+#breadcrumbs{font-size:12px; line-height: 24px; text-transform:uppercase}
+#breadcrumbs p{color:#77abea;margin:0}
+#breadcrumbs a{font-weight: 700; color: #260086; text-decoration:none;}
+#breadcrumbs a:after {content: '\f04b'; font-family: 'FontAwesome';margin: 0 10px; font-size: 8px; position: relative; top: -2px;}
+#breadcrumbs i{font-size:13px;margin:0 4px}
+
+#page-title {font-family: 'Arial'; font-size: 35px; font-weight: 700; line-height: 24px; text-transform: capitalize; color: #260086; margin: 24px 0 42px; letter-spacing: 0.03em;}
+#post p {font-size: 16px; line-height: 24px; color: #393939; margin-bottom: 23px;}
+#post ul {margin: 0 0 23px 29px; padding: 0; font-size: 16px; line-height: 24px;}
 
 /* -----------------------------------------
 
@@ -377,7 +389,7 @@ footer {background-color: #260086; padding: 28px 0; font-size: 13px; line-height
 .btn-google:hover{border-color:#D34836}
 .btn-reddit:hover{border-color:#ff5700}
 .btn-lg{font-size:16px;padding:14px 30px;border:0;border-radius:3px}
-.floating-share-btn{position:fixed;z-index:99999;top:40%;right:0;line-height:1.8;border-radius:0;border:0;background:#278718!important;color:#fff!important;padding:10px;box-shadow:0 0 10px rgba(0,0,0,.3);text-align:center}
+.floating-share-btn{position:fixed;z-index:99998;top:40%;right:0;line-height:1.8;border-radius:0;border:0;background:#278718!important;color:#fff!important;padding:10px;box-shadow:0 0 10px rgba(0,0,0,.3);text-align:center}
 .floating-share-btn span {display:block}
 
 /* -----------------------------------------
@@ -425,6 +437,8 @@ footer {background-color: #260086; padding: 28px 0; font-size: 13px; line-height
 	#nav .focused .toggle,#nav .focused .toggle2,#flyout .focused .toggle{display:inline-block;margin-left:8px}
 	#flyout .focused .toggle,#nav .focused .toggle2{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
 	#flyout,#nav{display:block!important}
+	#flyout-wrap {border-right: 1px solid rgba(0,0,0,.2);}
+	#side-content {padding: 70px 11px 0 0;}
 
 	nav {margin-left: 220px; margin-right:7px}
 	nav:after{content:'';position:absolute;right:-9px;top:50%;transform:translateY(-50%);width:2px;height:13px;background-color:rgba(0,0,0,.2)}
@@ -491,7 +505,7 @@ footer {background-color: #260086; padding: 28px 0; font-size: 13px; line-height
 
 @media only screen and (max-width:991px) {
 
-	.floating-share-btn {top:unset;bottom:54px}
+	.floating-share-btn {top:unset;bottom:96px}
 	/* rz form tables - without page scope this targets editforms and makes
 	 * editing confusing
 	 */
@@ -527,11 +541,15 @@ footer {background-color: #260086; padding: 28px 0; font-size: 13px; line-height
 	#flyout{display:none}
 	#flyout li{}
 	#flyout li a,
-	#flyout li span{padding:20px 30px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px}
+	#flyout li span{padding:15px;line-height:1;border-bottom:1px solid rgba(255,255,255,.2);background:none;font-size:14px;color:#fff;}
 	#flyout ul{position:static;left:0;padding:0;background:rgba(0,0,0,.2)}
 	#flyout ul a,
 	#flyout ul span{width:100%}
 	#flyout li:hover > ul{display:none}
+	#flyout-header {display: none;}
+	#flyout-toggle {font-size: 17px; color: #fff; margin: 0;}
+	#flyout-wrap {background-color: #260086; margin: 20px -15px 0; padding: 20px 15px;}
+	#flyout .toggle {position:absolute;right:0;top:0;background:rgba(0,0,0,.2);height:45px;width:45px;line-height:45px;text-align:center;font-size:20px}
 
 
 	/*-------------------- #slider --------------------*/
@@ -567,9 +585,14 @@ footer {background-color: #260086; padding: 28px 0; font-size: 13px; line-height
 	.news-link-content a {font-size: 12px;}
 
 	/*-------------------- footer --------------------*/
-	footer {line-height: 20px; font-size: 12px;}
+	footer {line-height: 20px;}
 	#footer-left,
 	#footer-right {float: none;}
+
+	/*-------------------- #entry --------------------*/
+	#page-title {font-size: 34px; margin-bottom: 30px;}
+	#post p {font-size: 15px;}
+	#post ul {font-size: 15px;}
 
 }
 
@@ -602,6 +625,9 @@ footer {background-color: #260086; padding: 28px 0; font-size: 13px; line-height
 	/*-------------------- #news-events --------------------*/
 	.news-link,
 	.news-link:last-of-type {width: 100%;}
+
+		/*-------------------- footer --------------------*/
+		footer {font-size: 12px;}
 
 }
 
